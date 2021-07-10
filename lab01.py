@@ -32,6 +32,8 @@ plt.show()
 """
 print('\033[92m'+all_positive[random.randint(0,5000)])
 print('\033[91m'+all_negative[random.randint(0,5000)])
+
+
 """
 tweet=all_positive[227]
 
