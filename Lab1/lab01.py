@@ -2,6 +2,7 @@ import nltk
 from nltk.corpus import twitter_samples
 import matplotlib.pyplot as plt
 import random
+import numpy
 
 nltk.download('twitter_samples')
 
