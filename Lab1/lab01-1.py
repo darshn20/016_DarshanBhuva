@@ -2,40 +2,44 @@ import nltk
 from nltk.corpus import twitter_samples
 import matplotlib.pyplot as plt
 import random
-import numpy
 
 nltk.download('twitter_samples')
 
 all_positive=twitter_samples.strings('positive_tweets.json')
 all_negative=twitter_samples.strings('negative_tweets.json')
-"""
+
 print('Number of positive:',len(all_positive))
 print('Number of negative ',len(all_negative))
+
 print('\nthe type of all positive : ',type(all_positive))
 print('the type of a tweet entry is: ',type(all_negative[0]))
-"""
-"""
+
 fig=plt.figure(figsize=(5,5))
+
 labels='ML-BSB-Lec','ML-HAP-Lec','ML-HAP-Lab'
+
 sizes=[40,35,10]
+
 plt.pie(sizes,labels=labels,autopct='%.2f%%',shadow=True,startangle=90)
+
 plt.axis('equal')
 plt.show()
-"""
-"""
+
 fig=plt.figure(figsize=(8,5))
+
 labels='Positives','Negatives'
+
 sizes=[len(all_positive),len(all_negative)]
+
 plt.pie(sizes,labels=labels,autopct='%1.1f%%',shadow=True,startangle=90)
+
 plt.axis('equal')
 plt.show()
-"""
-"""
+
 print('\033[92m'+all_positive[random.randint(0,5000)])
+
 print('\033[91m'+all_negative[random.randint(0,5000)])
 
-
-"""
 tweet=all_positive[227]
 
 nltk.download('stopwords')
