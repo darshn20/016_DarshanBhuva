@@ -1,10 +1,6 @@
 from google.colab import drive
 drive.mount("/content/drive")
 
-"""## **Roll Number 12**
-Apply algorithm on digits dataset - LabelEncoding of features: and Train test Division 80%-20%
-"""
-
 # Importing needful libraries
 
 import numpy as np
@@ -34,8 +30,6 @@ for i in range(10):
     plt.subplot(8, 8, i + 1)
     plt.imshow(main_data.images[i])
 
-"""
-# Spliting Train-Test : **80**% - **20**%"""
 
 from sklearn.model_selection import train_test_split
 
@@ -55,8 +49,6 @@ print(f"Accuracy :- {metrics.accuracy_score(Y_test, Y_predicted)}")
 
 main_data.images[3]
 
-"""# True Prediction"""
-
 _, axes = plt.subplots(nrows=1, ncols=4, figsize=(10, 3))
 for ax, image, prediction in zip(axes, X_test, Y_predicted):
     ax.set_axis_off()
@@ -72,4 +64,3 @@ disp.figure_.suptitle("Confusion Matrix")
 print(f"Confusion matrix:\n{disp.confusion_matrix}")
 
 plt.show()
-

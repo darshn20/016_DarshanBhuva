@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from sklearn import datasets, preprocessing
 from sklearn.naive_bayes import GaussianNB, MultinomialNB
 
-dataset = pd.read_csv("/content/drive/MyDrive/Sem7/My_ML/L3/PracticeDataSets/Dataset1.csv")
+dataset = pd.read_csv("/content/drive/My Drive/Colab Notebooks/ML-Lab/Dataset1.csv")
 
 # labelEncoder Object
 label_encoder = preprocessing.LabelEncoder()
