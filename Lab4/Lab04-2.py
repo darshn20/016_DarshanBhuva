@@ -34,14 +34,11 @@ print("\n\nFeatures:", wine_data.feature_names)
 print("\nLabels:", np.unique(wine_data.target_names))
 
 
-# **Splitting the dataset for training(80%) and testing(20%).
-# Random state = 12 (Roll No. 12)**
-# 
 
 # In[ ]:
 
 
-x_train, x_test, y_train, y_test = train_test_split(wine_data.data, wine_data.target, test_size = 0.20, random_state = 12)
+x_train, x_test, y_train, y_test = train_test_split(wine_data.data, wine_data.target, test_size = 0.20, random_state = 16)
 
 
 # In[ ]:

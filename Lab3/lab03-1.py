@@ -30,7 +30,7 @@ print(dataset,Y_rows)
 
 from sklearn.model_selection import train_test_split
 
-X_train, X_test, Y_train, Y_test = train_test_split(dataset, Y_rows, test_size = 0.30, random_state = 54)
+X_train, X_test, Y_train, Y_test = train_test_split(dataset, Y_rows, test_size = 0.30, random_state = 16)
 
 # create model
 model = MultinomialNB()
