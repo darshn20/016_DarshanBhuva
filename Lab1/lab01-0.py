@@ -34,5 +34,17 @@ plt.show()
 df=pd.DataFrame(data,columns=['gear'])
 print("Count How many values:\n",df['gear'].value_counts())
 
+#Exercise:
+data = pd.read_csv('/content/drive/My Drive/Colab Notebooks/ML-Lab/Datasets/Data_for_Transformation.csv')
+d = pd.crosstab(index=data['Country'], columns='Age', dropna=True)
+print(d)
 
+plt.scatter(data['Age'], data['Salary'])
+plt.show()
+
+plt.hist(data['Salary'], bins=5)
+plt.show()
+
+plt.bar(data['Country'], data['Age'])
+plt.show()
 

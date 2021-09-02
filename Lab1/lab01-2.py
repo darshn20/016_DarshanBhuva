@@ -141,3 +141,19 @@ print(nparrayCentered)
 print('New mean by rows')
 print(nparrayCentered.mean(axis=1))
 
+#Exercise:
+npArray3x2 = np.array([[1, 2, 3], [4, 5, 6]])
+npArray2x3 = np.array([[1, 2], [3, 4], [4, 5]])
+print(npArray3x2)
+print(npArray2x3)
+
+npArray3x2 = np.random.randint(1, 10, size=[3, 2])
+npArray2x3 = np.random.randint(1, 10, size=[2, 3])
+print(npArray3x2)
+print(npArray2x3)
+
+print(np.multiply(npArray3x2, npArray2x3.T))
+print(np.multiply(npArray3x2.T, npArray2x3))
+print(np.matmul(npArray2x3, npArray3x2))
+print(np.matmul(npArray3x2, npArray2x3))
+print(np.mean(npArray3x2))
